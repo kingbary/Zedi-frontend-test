@@ -1,0 +1,118 @@
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@200,400,500,300&display=swap");
+
+:root {
+  --primary-color: #373737; /* headlines & active states */
+  --secondary-color: #18191840; /* card text-color */
+  --accent-color: aliceblue; /* accent color */
+  --tertiary-color: #e8d4bdba; /* text color (footer) */ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Clash Display', sans-serif;
+  scroll-behavior: smooth;
+  font-weight: 300;
+  transition: all 200ms ease-in-out;
+}
+
+body {
+  background-color: rgba(219, 215, 215, 0.699);
+  color: rgba(50, 49, 49, 0.952);
+}
+
+/* $-width-$ */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(16, 16, 164);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  margin-block: 1rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: clamp(0.7rem, 5vw, 2rem);
+}
+
+p {
+  font-size: clamp(3px, 4vw, 0.9rem);
+}
+
+/* $-Utility classes-$ */
+.loading {
+  margin: 10rem, auto;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-btw {
+  justify-content: space-between;
+}
+
+.align-y {
+  align-items: center;
+}
+
+.align-x {
+  justify-content: center;
+}
+
+.b-radius {
+  border-radius: 8px;
+}
+
+.f-width {
+  width: 100%;
+}
+
+.pad {
+  padding: 1rem 0.5rem;
+}
+
+.c_pad {
+  padding: 1rem;
+}
+
+.c-pad {
+  padding: 0.4rem;
+}
+
+.gap {
+  gap: 0.5rem;
+}
+
+.s-gap {
+  gap: 0.2rem;
+}
+
+.stack {
+  z-index: 100;
+};
+
+.f-height {
+  height: 100%;
+}
